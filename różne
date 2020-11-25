@@ -1,0 +1,134 @@
+# %% - kernel = jądra - zapisuje się w nim wszystkie zmienne
+
+a = 10
+print(a)
+
+# %%
+print('\tPython') ## zrobienie akapitu
+
+# %%
+print('c:path\\to\something\new') ## w takim przypadku dodać kolejny \
+
+print(r'c:path\to\something\new') ## r= raw text
+
+# %%
+import os
+os.getcwd()
+
+# %% bardziej zaawansowane printowanie
+
+print("""
+      instrukcja uruchamiania pliku python.exe:
+          
+          --file [nazwa pliku]
+          zapisuj output do pliku
+          
+          --quiet 
+          wycisza logi w konsoli
+          
+          koniec naszej instrukcji
+""")
+
+# %%
+
+saldo = 40 
+saldo =  saldo + 30 ## można to zapisać jako saldo += 30 albo -=30
+
+print (saldo)
+
+# %%
+
+lokata = 1000
+## czynnik akumulacyjny - po przemnożenie przez lokatę da nam wartosć przyszłą 
+
+czynnik_akumulacyjny  = 1 + 0.04
+
+lokata_po_roku = lokata * czynnik_akumulacyjny
+print('Wartość lokaty po roku:', lokata_po_roku)
+
+# %%
+
+pixel = 150
+pixel /= 255
+
+print (pixel)
+
+# %% potęgowanie 
+base = 2
+base **= 5
+print (base)
+
+# %% dzielenie modulo
+x = 103 
+x=  x % 10
+print (x)
+
+# %% przypisanie danych tekstowych 
+
+imie = 'p '
+nazwisko = 'w'
+nazwa = imie + nazwisko
+print(nazwa)
+
+# %%
+name = 'python'
+version = '3.7'
+
+# %% ćwiczenie nr 3
+kwota_poczatkowa = 1000
+stopa_procentowa = 0.05
+okres_trwania = 2
+
+print(kwota_poczatkowa*(1 + stopa_procentowa)**okres_trwania)
+
+
+# %% funkcja 
+
+    def roll_dice(num):
+        return random.randint(1, num)
+print(def)
+# %%
+a = ['python', '3,7']
+'#'.join(['python', '4'])
+# %%
+
+print('Mateusz jest ekstra')
+# %%
+'#good#time#mood'.replace('#', "Mateuosz")
+
+#%%
+text = 'witaj na kursie python. python jest wspaniały'
+
+print(text)
+
+print(dir(text))
+help(str.count)
+
+text.capitalize() #pierwsze słowo z dużej
+print(text)
+text.title() #każde słowo z dużej
+print(text)
+text.count('python')#liczy ile razy występuje dane słowo w tekście
+text.startswith('kurs')#sprawdza, czy tekst startuje z danym wyrazem
+'python'.startswith('py')#sprawdza, czy dane słowo zaczyna się od 'py'
+text.endswith('wspaniały')#analogicznie jw.
+
+text.find('python') #zwraca numer indeksu, od którego zaczyna się dane słowo
+text[text.find('Python'):] #wycinan od 16 wiersza do końca
+
+hashtags = '#sport#gym'
+idx = hashtags.find('#') # idx = index
+hashtags[:idx]
+
+'pawel'.isalnum() #czy są znakami alfanumerycznymi
+'pawel14 '.isalnum() #dostaniemy fałsz, bo spacja nie jest znakiem alfanumerycznym
+
+'34132'.isdigit() #czy cyfry T/F
+
+'python'.islower()
+'PytHON'.isupper()
+
+'#'.join(['python', '3.7'])
+
+#łączenie tekstów 
+'#'.join(['python', '4'])
